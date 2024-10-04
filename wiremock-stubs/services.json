@@ -1,0 +1,8 @@
+{
+  "services" : [ {
+    "id" : "3n2xw",
+    "name" : "bs services",
+    "port" : 9001,
+    "rootDir" : "bs-services"
+  } ]
+}

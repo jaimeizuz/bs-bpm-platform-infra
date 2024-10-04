@@ -1,0 +1,20 @@
+{
+  "id" : "24409260-7680-4c5a-916e-3bf194dbcea5",
+  "name" : "Get cities by country Id",
+  "request" : {
+    "urlPattern" : "/countries/.*/cities",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\r\n    \"citiesList\": [\r\n        {\r\n            \"cityId\": 1,\r\n            \"city\": \"A Coruña (La Coruña)\",\r\n            \"countryId\": 0,\r\n            \"last_update\": \"2006-02-15T04:45:25.000+00:00\"\r\n        },\r\n        {\r\n            \"cityId\": 146,\r\n            \"city\": \"Donostia-San Sebastián\",\r\n            \"countryId\": 0,\r\n            \"last_update\": \"2006-02-15T04:45:25.000+00:00\"\r\n        },\r\n        {\r\n            \"cityId\": 181,\r\n            \"city\": \"Gijón\",\r\n            \"countryId\": 0,\r\n            \"last_update\": \"2006-02-15T04:45:25.000+00:00\"\r\n        },\r\n        {\r\n            \"cityId\": 388,\r\n            \"city\": \"Ourense (Orense)\",\r\n            \"countryId\": 0,\r\n            \"last_update\": \"2006-02-15T04:45:25.000+00:00\"\r\n        },\r\n        {\r\n            \"cityId\": 459,\r\n            \"city\": \"Santiago de Compostela\",\r\n            \"countryId\": 0,\r\n            \"last_update\": \"2006-02-15T04:45:25.000+00:00\"\r\n        }\r\n    ]\r\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "24409260-7680-4c5a-916e-3bf194dbcea5",
+  "persistent" : true,
+  "priority" : 5,
+  "insertionIndex" : 0,
+  "postServeActions" : [ ]
+}
