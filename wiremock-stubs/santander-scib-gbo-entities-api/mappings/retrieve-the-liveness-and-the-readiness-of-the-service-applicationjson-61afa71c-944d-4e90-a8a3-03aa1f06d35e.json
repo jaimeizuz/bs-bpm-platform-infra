@@ -1,0 +1,48 @@
+{
+  "id" : "61afa71c-944d-4e90-a8a3-03aa1f06d35e",
+  "name" : "Retrieve the liveness and the readiness of the service. (application/json)",
+  "request" : {
+    "urlPath" : "/health",
+    "method" : "GET",
+    "headers" : {
+      "Accept" : {
+        "contains" : "application/json"
+      }
+    }
+  },
+  "response" : {
+    "status" : 429,
+    "body" : "{\n  \"errors\" : [ {\n    \"code\" : \"notFound\",\n    \"message\" : \"Not Found\",\n    \"level\" : \"ERROR\",\n    \"description\" : \"Not Found\"\n  } ]\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "61afa71c-944d-4e90-a8a3-03aa1f06d35e",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2024-10-23T17:30:47.223366248Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "retrieveHealth",
+        "schema" : {
+          "description" : "Data structure containing the details for errors.",
+          "type" : "object",
+          "minProperties" : 1,
+          "properties" : {
+            "errors" : {
+              "type" : "array",
+              "description" : "List of errors.",
+              "items" : {
+                "$ref" : "#/components/schemas/Error"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 3
+}

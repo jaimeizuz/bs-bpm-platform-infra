@@ -1,0 +1,53 @@
+{
+  "id" : "55582b66-81e0-4987-836b-2079e8b15a2f",
+  "name" : "Retrieves operational entities. (application/json)",
+  "request" : {
+    "urlPath" : "/entities",
+    "method" : "GET",
+    "headers" : {
+      "Accept" : {
+        "contains" : "application/json"
+      }
+    },
+    "queryParameters" : {
+      "glcs" : {
+        "equalTo" : "ffn"
+      }
+    }
+  },
+  "response" : {
+    "status" : 503,
+    "body" : "{\n  \"errors\" : [ {\n    \"code\" : \"serviceUnavailable\",\n    \"message\" : \"Service Unavailable\",\n    \"level\" : \"ERROR\",\n    \"description\" : \"Service Unavailable\"\n  } ]\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "55582b66-81e0-4987-836b-2079e8b15a2f",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2024-10-23T17:30:47.175447199Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "retrieveEntities",
+        "schema" : {
+          "description" : "Data structure containing the details for errors.",
+          "type" : "object",
+          "minProperties" : 1,
+          "properties" : {
+            "errors" : {
+              "type" : "array",
+              "description" : "List of errors.",
+              "items" : {
+                "$ref" : "#/components/schemas/Error"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 28
+}

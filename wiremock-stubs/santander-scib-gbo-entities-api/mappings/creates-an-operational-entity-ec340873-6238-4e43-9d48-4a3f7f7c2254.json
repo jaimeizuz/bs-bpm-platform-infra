@@ -1,0 +1,43 @@
+{
+  "id" : "ec340873-6238-4e43-9d48-4a3f7f7c2254",
+  "name" : "Creates an operational entity.",
+  "request" : {
+    "urlPath" : "/entities",
+    "method" : "POST"
+  },
+  "response" : {
+    "status" : 404,
+    "body" : "{\n  \"errors\" : [ {\n    \"code\" : \"notFound\",\n    \"message\" : \"Not Found\",\n    \"level\" : \"ERROR\",\n    \"description\" : \"Not Found\"\n  } ]\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "ec340873-6238-4e43-9d48-4a3f7f7c2254",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2024-10-23T17:30:47.181033634Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "createEntities",
+        "schema" : {
+          "description" : "Data structure containing the details for errors.",
+          "type" : "object",
+          "minProperties" : 1,
+          "properties" : {
+            "errors" : {
+              "type" : "array",
+              "description" : "List of errors.",
+              "items" : {
+                "$ref" : "#/components/schemas/Error"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 22
+}

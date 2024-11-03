@@ -1,0 +1,43 @@
+{
+  "id" : "5c6872ce-2e14-4109-b38b-3da81efb9395",
+  "name" : "Updates an operational entity.",
+  "request" : {
+    "urlPath" : "/entities/1037",
+    "method" : "PATCH"
+  },
+  "response" : {
+    "status" : 403,
+    "body" : "{\n  \"errors\" : [ {\n    \"code\" : \"forbidden\",\n    \"message\" : \"Forbidden\",\n    \"level\" : \"ERROR\",\n    \"description\" : \"Forbidden\"\n  } ]\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "5c6872ce-2e14-4109-b38b-3da81efb9395",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2024-10-23T17:30:47.207182762Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "updateEntities",
+        "schema" : {
+          "description" : "Data structure containing the details for errors.",
+          "type" : "object",
+          "minProperties" : 1,
+          "properties" : {
+            "errors" : {
+              "type" : "array",
+              "description" : "List of errors.",
+              "items" : {
+                "$ref" : "#/components/schemas/Error"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 15
+}

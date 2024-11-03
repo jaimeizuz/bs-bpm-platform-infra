@@ -1,0 +1,53 @@
+{
+  "id" : "93074398-e3fe-4635-96ca-317f04f1e9d6",
+  "name" : "Retrieves operational entities. (application/json)",
+  "request" : {
+    "urlPath" : "/entities",
+    "method" : "GET",
+    "headers" : {
+      "Accept" : {
+        "contains" : "application/json"
+      }
+    },
+    "queryParameters" : {
+      "glcs" : {
+        "equalTo" : "xzc74"
+      }
+    }
+  },
+  "response" : {
+    "status" : 504,
+    "body" : "{\n  \"errors\" : [ {\n    \"code\" : \"gatewayTimeout\",\n    \"message\" : \"Gateway timeout\",\n    \"level\" : \"ERROR\",\n    \"description\" : \"Gateway timeout\"\n  } ]\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "93074398-e3fe-4635-96ca-317f04f1e9d6",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2024-10-23T17:30:47.17648411Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "retrieveEntities",
+        "schema" : {
+          "description" : "Data structure containing the details for errors.",
+          "type" : "object",
+          "minProperties" : 1,
+          "properties" : {
+            "errors" : {
+              "type" : "array",
+              "description" : "List of errors.",
+              "items" : {
+                "$ref" : "#/components/schemas/Error"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 27
+}

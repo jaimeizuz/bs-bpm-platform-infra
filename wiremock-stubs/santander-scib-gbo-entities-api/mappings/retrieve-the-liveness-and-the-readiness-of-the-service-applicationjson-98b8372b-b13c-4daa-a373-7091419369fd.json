@@ -1,0 +1,48 @@
+{
+  "id" : "98b8372b-b13c-4daa-a373-7091419369fd",
+  "name" : "Retrieve the liveness and the readiness of the service. (application/json)",
+  "request" : {
+    "urlPath" : "/health",
+    "method" : "GET",
+    "headers" : {
+      "Accept" : {
+        "contains" : "application/json"
+      }
+    }
+  },
+  "response" : {
+    "status" : 503,
+    "body" : "{\n  \"errors\" : [ {\n    \"code\" : \"serviceUnavailable\",\n    \"message\" : \"Service Unavailable\",\n    \"level\" : \"ERROR\",\n    \"description\" : \"Service Unavailable\"\n  } ]\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "98b8372b-b13c-4daa-a373-7091419369fd",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2024-10-23T17:30:47.224628886Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "retrieveHealth",
+        "schema" : {
+          "description" : "Data structure containing the details for errors.",
+          "type" : "object",
+          "minProperties" : 1,
+          "properties" : {
+            "errors" : {
+              "type" : "array",
+              "description" : "List of errors.",
+              "items" : {
+                "$ref" : "#/components/schemas/Error"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 1
+}

@@ -1,0 +1,23 @@
+{
+  "id" : "ffdb4155-6627-493b-9c3f-e0e561133b3d",
+  "name" : "Dummy",
+  "request" : {
+    "url" : "/dummy",
+    "method" : "GET",
+    "headers" : {
+      "Accept" : {
+        "contains" : "json"
+      }
+    }
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{}",
+    "headers" : { }
+  },
+  "uuid" : "ffdb4155-6627-493b-9c3f-e0e561133b3d",
+  "persistent" : true,
+  "priority" : 5,
+  "insertionIndex" : 36,
+  "postServeActions" : [ ]
+}

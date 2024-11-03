@@ -1,0 +1,43 @@
+{
+  "id" : "23077852-efa3-4fba-8a6d-e1cebf91b01b",
+  "name" : "Updates an operational entity.",
+  "request" : {
+    "urlPath" : "/entities/3nk3",
+    "method" : "PATCH"
+  },
+  "response" : {
+    "status" : 401,
+    "body" : "{\n  \"errors\" : [ {\n    \"code\" : \"unauthorized\",\n    \"message\" : \"Unauthorized\",\n    \"level\" : \"ERROR\",\n    \"description\" : \"Unauthorized\"\n  } ]\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "23077852-efa3-4fba-8a6d-e1cebf91b01b",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2024-10-23T17:30:47.205598344Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "updateEntities",
+        "schema" : {
+          "description" : "Data structure containing the details for errors.",
+          "type" : "object",
+          "minProperties" : 1,
+          "properties" : {
+            "errors" : {
+              "type" : "array",
+              "description" : "List of errors.",
+              "items" : {
+                "$ref" : "#/components/schemas/Error"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 16
+}

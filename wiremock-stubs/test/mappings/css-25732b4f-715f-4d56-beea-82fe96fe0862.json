@@ -1,0 +1,31 @@
+{
+  "id" : "25732b4f-715f-4d56-beea-82fe96fe0862",
+  "name" : "CSS",
+  "request" : {
+    "url" : "/css/stylesheet.css",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "body {\n    margin: 0;\n    padding: 0;\n    color: #2f363e;\n    font-family: Cairo,sans-serif;\n    font-size: 18px;\n    line-height: 1.5;\n}\n\nh1, h2, h3, h4, h5, h6 {\n    margin: 2em 0 0.5em;\n    line-height: 1.2;\n    font-family: Cairo,sans-serif;\n    font-weight: bold;\n}\n\np {\n    margin-top: 2em;\n    margin-bottom: 2em;\n}\n\na {\n    color: #40904D;\n}\n\nnav a {\n    text-decoration: none;\n}\n\nnav ul {\n    margin: 0;\n    padding: 0;\n}\n\nnav li {\n    list-style: none;\n}\n\nnav ul li, nav ol li {\n    margin-bottom: 0;\n}\n\n.header-nav {\n    padding: 0 1rem;\n    height: 48px;\n    background: #f1f1f1;\n    border-bottom: solid 1px #c1c1c1;\n}\n\n.sticky {\n    clear: both;\n    position: -webkit-sticky;\n    position: sticky;\n    top: 0em;\n    z-index: 1000;\n}\n\n.header-nav__container {\n    max-width: 1280px;\n    height: 100%;\n    display: flex;\n    flex-direction: row;\n    justify-content: flex-start;\n    align-items: center;\n    padding-left: 1em;\n    margin-left: auto;\n    margin-right: auto;\n}\n\n.header-nav__logo {\n    float: left;\n    margin-right: 1.69492%;\n    height: auto;\n}\n\n.header-nav__item {\n    font-size: 1em;\n    font-weight: bold;\n    margin-right: 1.69492%;\n}\n\n.header-nav__item--last {\n    flex-grow: 100;\n    text-align: right;\n}\n\n.header-nav__logo img {\n    width: 124px;\n    vertical-align: middle;\n}\n\n.header-nav__cta {\n    margin-right: 3em;\n    border-radius: 3px;\n    padding-left: 0.5rem;\n    padding-right: 0.5rem;\n    text-align: center;\n    font-size: 1em;\n    font-weight: 600;\n    border: none;\n    background-color: #40904D;\n}\n\n.header-nav__cta a {\n    color: white;\n    font-weight: bold;\n}\n\n#main {\n    max-width: 1280px;\n    margin-left: auto;\n    margin-right: auto;\n    clear: both;\n    margin-top: 2em;\n    padding-left: 1em;\n    padding-right: 1em;\n    animation: intro 0.3s both;\n    animation-delay: 0.35s;\n    min-height: 1024px;\n    display: flex;\n}\n\n\n.login-start-button {\n    border: 3px solid #c1c1c1;\n    border-radius: 10px;\n    padding: 10px;\n    margin-top: 1em;\n    margin-bottom: 1em;\n    display: inline;\n    width: 30em;\n    vertical-align: center;\n}\n\n.login-start-button img {\n    height: 30px;\n    margin-right: 10px;\n    vertical-align: text-top;\n}\n\n.logout-button {\n    background-color: transparent;\n    font-family: Cairo,sans-serif;\n    font-weight: bold;\n    font-size: 1em;\n    color: #40904D;\n    border: none;\n    cursor: pointer;\n}\n\n.demo-box {\n    border: 1px solid #c1c1c1;\n    border-radius: 6px;\n    margin-top: 1em;\n    margin-right: 3em;\n    padding: 1em;\n}\n\n.subtitle {\n    color: #c1c1c1;\n    margin-top: -1em;\n}\n\n#callout {\n    max-width: 250px;\n    border: 1px #c1c1c1 solid;\n    padding: 15px;\n    border-radius: 6px;\n    margin-left: 3em;\n    margin-top: 10em;\n}\n\n#callout h2 {\n    margin-top: 0em;\n}\n\n@media only screen and (max-width: 1000px) {\n  #main {\n    flex-direction: column;\n  }\n\n  #callout {\n    margin-right: 3em;\n    margin-bottom: 3em;\n  }\n}\n",
+    "headers" : { }
+  },
+  "uuid" : "25732b4f-715f-4d56-beea-82fe96fe0862",
+  "persistent" : true,
+  "priority" : 5,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2020-03-03T13:43:49.114Z",
+        "via" : "STUB_IMPORT",
+        "by" : "7p1dp"
+      },
+      "updated" : {
+        "at" : "2020-03-03T15:14:22.362Z",
+        "via" : "ADMIN_API",
+        "by" : "7p1dp"
+      }
+    }
+  },
+  "insertionIndex" : 10
+}

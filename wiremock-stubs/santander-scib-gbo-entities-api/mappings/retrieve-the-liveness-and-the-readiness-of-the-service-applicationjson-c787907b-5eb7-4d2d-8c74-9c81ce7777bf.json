@@ -1,0 +1,48 @@
+{
+  "id" : "c787907b-5eb7-4d2d-8c74-9c81ce7777bf",
+  "name" : "Retrieve the liveness and the readiness of the service. (application/json)",
+  "request" : {
+    "urlPath" : "/health",
+    "method" : "GET",
+    "headers" : {
+      "Accept" : {
+        "contains" : "application/json"
+      }
+    }
+  },
+  "response" : {
+    "status" : 504,
+    "body" : "{\n  \"errors\" : [ {\n    \"code\" : \"gatewayTimeout\",\n    \"message\" : \"Gateway timeout\",\n    \"level\" : \"ERROR\",\n    \"description\" : \"Gateway timeout\"\n  } ]\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "c787907b-5eb7-4d2d-8c74-9c81ce7777bf",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2024-10-23T17:30:47.225732683Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "retrieveHealth",
+        "schema" : {
+          "description" : "Data structure containing the details for errors.",
+          "type" : "object",
+          "minProperties" : 1,
+          "properties" : {
+            "errors" : {
+              "type" : "array",
+              "description" : "List of errors.",
+              "items" : {
+                "$ref" : "#/components/schemas/Error"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 0
+}

@@ -1,0 +1,28 @@
+{
+  "id" : "95900ca1-6688-4eab-b8c4-a5fc8107c420",
+  "name" : "Favicon",
+  "request" : {
+    "url" : "/favicon.png",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "base64Body" : "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4AcYDC8A5hvTSwAABI1JREFUWMO11m2IXWcRB/Df85x7Ny9tYivpq4La2hahiiCazaZ2FzVCP4hKo+AnrYKuolXSJGgqGhFBTGIhKqkWaj6kon4oCopCU7MbmjfBiFaJlZAWShJDEqK2WXf33nvGD+du9mRzk91tsn+43HPPzDPzn5lnZm4yT2w5MAQJi7rfIrRS1t7QPzJfc5WBK2HbgSF9ixeZ+N/4Crwd78I9uLF2/jyO4TAO55ROoFy3anZClyXw/b1D0mTSWRJvkmIt1uJeXHeZc4EJHMVvJLuydGQ2Ij0JbN0/KLEkeBDr8A4U88zuMfw48URwbv3A6OwEHjv0Pu12h5RWJPF1fAbX94i0hWbtfLv7vjlDt4VfYZMyHdUI6/tHexPYPLLGskWTItJtxGPdlNejnsRf8DucwXewrCv7PX6BNXg/bplBZC+GIxwpimxd/54Lgjz1sKxvkrCc2IyPzXB+BA/jQxHxTezuRj2F49iZUvo0PoynMF6T34+tKbm9LMuLmGX43r4hY5PNFDyET9aIdfBrfLzU+Ekpn0rp8o3zyKqRieBQRBrGJpyriR/AxiQt2la18jSBnMKSvtY78WVVf0/V+ml8Qfhbzu3YOLDHbNgwMCpHvJo6foBv4JVauT8V4gMhbH2uIpG3HRiSUmric3hLzdYhfBUnGql9yeW5Eh65b5RCO0lP4MluMPA6fFYnTd0dOSJExN3dFE3hv/hu4lgZyVcG9s3Z+QUSA6NCTOCHeL4mGpTj3XJMlwCDeGNN6Vll2h2RbFw9Mm/n00g6jfGj+OWMLDyQ26UtB4dkZe7DfTUyk3hajvPrr8o56wdGFO3FVK17tibq7zSK1yvJcrkCd9WEp/DHq/J8KV7CP2u/35zETUnIWI7basIXSafnsKfmiCTkVyq7F3Cj7oRtFMl44jncgBwcaDE2i/vzGFVNwkI1qHoitymWlq2ybV/iZtVsGVdddI1HD/edw89V/Z9xbOxMntjywYkrEXhZNS2nEJdTXHf/iKVfWgkH8W+Uqil6BlKxfc29+ANu6p7ZiYc6Dz9zTQrQGF6p3WkpiuYODNcyOIg/5R5nrlXxL6SmKJrXubjNJ1SbUn4tRueN5Ba8rfbmpHBO0FhQx8P9VQ7CyhkZ+LuUTi14BgpBshyfML3kOthNTHYeP7hwBPLnVypKhI+o/qRM4YVg91TbLAiBxvB7KLNOtgqPYmlXVOJnN//j1hfLJRMLQyANr9JOzZRSuRo/wt018X5i5+l7/sWdJyuy18zz8Hs107gyyhtEuRZfwx01jRP4dop8vMwlXzx1lQQ236H58hvE4vEiOvl6Jm8vIw+oJuQgFte0T2NTLuKZKCl3TO+6XgRW46fF9jVXGkhZ8kJ59tXfauUNqmV2F27tYfMENpF3lZ2IzuMHLxL2IvDW7mc27MdfuxE3e8g72IdvFY1yT9mJaO+4dMsvxCCaVG3HXcRTkpOdsazz5KGeyg3VZjqr2gExRycN1WabVG21spvq5/FssLfsax1PImL7n2c19BI++hqyMaa6XGvQifCflNIZtMpunecSzf8BAfiTd64y2vUAAAAldEVYdGRhdGU6Y3JlYXRlADIwMTYtMDctMjRUMTI6NDc6MDArMDE6MDBVUQnnAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDE2LTA3LTI0VDEyOjQ3OjAwKzAxOjAwJAyxWwAAAABJRU5ErkJggg==",
+    "headers" : {
+      "Content-Type" : "image/png"
+    }
+  },
+  "uuid" : "95900ca1-6688-4eab-b8c4-a5fc8107c420",
+  "persistent" : true,
+  "priority" : 5,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2020-03-03T13:43:49.011Z",
+        "via" : "STUB_IMPORT",
+        "by" : "7p1dp"
+      }
+    }
+  },
+  "insertionIndex" : 7
+}

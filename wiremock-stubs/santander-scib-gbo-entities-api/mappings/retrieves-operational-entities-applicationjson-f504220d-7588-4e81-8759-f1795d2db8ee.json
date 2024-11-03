@@ -1,0 +1,53 @@
+{
+  "id" : "f504220d-7588-4e81-8759-f1795d2db8ee",
+  "name" : "Retrieves operational entities. (application/json)",
+  "request" : {
+    "urlPath" : "/entities",
+    "method" : "GET",
+    "headers" : {
+      "Accept" : {
+        "contains" : "application/json"
+      }
+    },
+    "queryParameters" : {
+      "glcs" : {
+        "equalTo" : "jj98"
+      }
+    }
+  },
+  "response" : {
+    "status" : 401,
+    "body" : "{\n  \"errors\" : [ {\n    \"code\" : \"unauthorized\",\n    \"message\" : \"Unauthorized\",\n    \"level\" : \"ERROR\",\n    \"description\" : \"Unauthorized\"\n  } ]\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "f504220d-7588-4e81-8759-f1795d2db8ee",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2024-10-23T17:30:47.169536746Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "retrieveEntities",
+        "schema" : {
+          "description" : "Data structure containing the details for errors.",
+          "type" : "object",
+          "minProperties" : 1,
+          "properties" : {
+            "errors" : {
+              "type" : "array",
+              "description" : "List of errors.",
+              "items" : {
+                "$ref" : "#/components/schemas/Error"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 32
+}

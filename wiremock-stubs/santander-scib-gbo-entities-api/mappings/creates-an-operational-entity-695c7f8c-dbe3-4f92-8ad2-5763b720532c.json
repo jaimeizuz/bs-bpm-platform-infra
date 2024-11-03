@@ -1,0 +1,42 @@
+{
+  "id" : "695c7f8c-dbe3-4f92-8ad2-5763b720532c",
+  "name" : "Creates an operational entity.",
+  "request" : {
+    "urlPath" : "/entities",
+    "method" : "POST"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\n  \"glcs\" : \"0cl8x1y8j92v9p4vlhpc21x8taccjnaq27kjk0j1914qf5r1pcajc4mxd9\",\n  \"id\" : 3.2008797052585434E307\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "695c7f8c-dbe3-4f92-8ad2-5763b720532c",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2024-10-23T17:30:47.178183886Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "createEntities",
+        "schema" : {
+          "description" : "Data structure containing information about the Entity registration response from SIGOM.",
+          "type" : "object",
+          "required" : [ "glcs", "id" ],
+          "properties" : {
+            "id" : {
+              "$ref" : "#/components/schemas/EntityId"
+            },
+            "glcs" : {
+              "$ref" : "#/components/schemas/Glcs"
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 26
+}

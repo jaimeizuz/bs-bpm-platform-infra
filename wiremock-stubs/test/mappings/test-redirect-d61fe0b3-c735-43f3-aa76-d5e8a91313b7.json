@@ -1,0 +1,29 @@
+{
+  "id" : "d61fe0b3-c735-43f3-aa76-d5e8a91313b7",
+  "name" : "Test redirect",
+  "request" : {
+    "urlPath" : "/test-auth",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 302,
+    "body" : "",
+    "headers" : {
+      "Location" : "{{request.requestLine.baseUrl}}/oauth/authorize?redirect_uri={{request.requestLine.baseUrl}}/test-success&state=123"
+    },
+    "transformers" : [ "response-template" ]
+  },
+  "uuid" : "d61fe0b3-c735-43f3-aa76-d5e8a91313b7",
+  "persistent" : true,
+  "priority" : 7,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2020-03-03T13:43:48.813Z",
+        "via" : "STUB_IMPORT",
+        "by" : "7p1dp"
+      }
+    }
+  },
+  "insertionIndex" : 1
+}

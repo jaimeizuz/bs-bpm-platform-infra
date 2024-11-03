@@ -1,0 +1,43 @@
+{
+  "id" : "e9d33645-80fd-4d9c-98f6-15d2be3546b4",
+  "name" : "Updates an operational entity.",
+  "request" : {
+    "urlPath" : "/entities/64e0",
+    "method" : "PATCH"
+  },
+  "response" : {
+    "status" : 400,
+    "body" : "{\n  \"errors\" : [ {\n    \"code\" : \"badRequest\",\n    \"message\" : \"Bad Request\",\n    \"level\" : \"ERROR\",\n    \"description\" : \"Bad Request\"\n  } ]\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "e9d33645-80fd-4d9c-98f6-15d2be3546b4",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2024-10-23T17:30:47.203625357Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "updateEntities",
+        "schema" : {
+          "description" : "Data structure containing the details for errors.",
+          "type" : "object",
+          "minProperties" : 1,
+          "properties" : {
+            "errors" : {
+              "type" : "array",
+              "description" : "List of errors.",
+              "items" : {
+                "$ref" : "#/components/schemas/Error"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 17
+}

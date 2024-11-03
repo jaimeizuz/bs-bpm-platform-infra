@@ -1,0 +1,51 @@
+{
+  "id" : "3d769069-c3cf-4eef-a295-a8f83f24a1f3",
+  "name" : "Retrieve the liveness and the readiness of the service. (application/json)",
+  "request" : {
+    "urlPath" : "/health",
+    "method" : "GET",
+    "headers" : {
+      "Accept" : {
+        "contains" : "application/json"
+      }
+    }
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\n  \"components\" : [ {\n    \"name\" : \"Johnathan Conroy\",\n    \"type\" : \"0vb6omldq5edxcp6fg64a21jkyfv5qltm6ceymbqou\",\n    \"status\" : \"UNKNOWN\"\n  } ],\n  \"status\" : \"OUT_OF_SERVICE\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "3d769069-c3cf-4eef-a295-a8f83f24a1f3",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2024-10-23T17:30:47.218875306Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "retrieveHealth",
+        "schema" : {
+          "description" : "Data structure containing information about the health response.",
+          "type" : "object",
+          "required" : [ "status", "components" ],
+          "properties" : {
+            "status" : {
+              "$ref" : "#/components/schemas/Status"
+            },
+            "components" : {
+              "type" : "array",
+              "description" : "List of components.",
+              "items" : {
+                "$ref" : "#/components/schemas/Component"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 10
+}

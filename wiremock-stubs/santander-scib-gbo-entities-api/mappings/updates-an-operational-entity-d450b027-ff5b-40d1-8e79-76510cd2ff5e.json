@@ -1,0 +1,55 @@
+{
+  "id" : "d450b027-ff5b-40d1-8e79-76510cd2ff5e",
+  "name" : "Updates an operational entity.",
+  "request" : {
+    "urlPath" : "/entities/655q",
+    "method" : "PATCH"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\n  \"bookingUnit\" : \"ne2llwmreqj8p65y75cgnz1iagbvdd8amd8ocwt6vjt9367ueakr0uac\",\n  \"tradingAccountIdentifiers\" : [ {\n    \"id\" : \"umey\",\n    \"type\" : \"LTID\",\n    \"creationDate\" : \"2024-09-05Z\"\n  }, {\n    \"id\" : \"cw2c\",\n    \"type\" : \"FDID\",\n    \"creationDate\" : \"2025-05-25Z\"\n  }, {\n    \"id\" : \"1u01\",\n    \"type\" : \"FDID\",\n    \"creationDate\" : \"2024-06-29Z\"\n  }, {\n    \"id\" : \"hcv5\",\n    \"type\" : \"LTID\",\n    \"creationDate\" : \"2024-03-07Z\"\n  }, {\n    \"id\" : \"14v1\",\n    \"type\" : \"LTID\",\n    \"creationDate\" : \"2025-06-29Z\"\n  }, {\n    \"id\" : \"v66w\",\n    \"type\" : \"FDID\",\n    \"creationDate\" : \"2025-05-10Z\"\n  }, {\n    \"id\" : \"pzj7\",\n    \"type\" : \"LTID\",\n    \"creationDate\" : \"2025-05-02Z\"\n  }, {\n    \"id\" : \"03tk\",\n    \"type\" : \"FDID\",\n    \"creationDate\" : \"2024-07-10Z\"\n  } ],\n  \"industry\" : {\n    \"code\" : \"HDFND\",\n    \"name\" : \"Mandy Doyle III\"\n  },\n  \"sourceApplication\" : {\n    \"code\" : \"h3z15c8y8207tcxlcmxdjco\",\n    \"name\" : \"Jefferey Weissnat II\"\n  },\n  \"status\" : \"ACTIVE\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "d450b027-ff5b-40d1-8e79-76510cd2ff5e",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2024-10-23T17:30:47.201356948Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "updateEntities",
+        "schema" : {
+          "description" : "Data structure containing information about the Entity update.",
+          "type" : "object",
+          "required" : [ "sourceApplication", "bookingUnit" ],
+          "properties" : {
+            "status" : {
+              "$ref" : "#/components/schemas/EntityStatus"
+            },
+            "industry" : {
+              "$ref" : "#/components/schemas/Industry"
+            },
+            "tradingAccountIdentifiers" : {
+              "type" : "array",
+              "description" : "List of Trading Account Identifiers.",
+              "items" : {
+                "$ref" : "#/components/schemas/TradingAccountIdentifier"
+              }
+            },
+            "sourceApplication" : {
+              "$ref" : "#/components/schemas/SourceApplication"
+            },
+            "bookingUnit" : {
+              "$ref" : "#/components/schemas/BookingUnit"
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 18
+}

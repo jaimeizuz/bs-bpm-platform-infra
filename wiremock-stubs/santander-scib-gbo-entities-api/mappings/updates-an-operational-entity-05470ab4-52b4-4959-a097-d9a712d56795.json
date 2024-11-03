@@ -1,0 +1,43 @@
+{
+  "id" : "05470ab4-52b4-4959-a097-d9a712d56795",
+  "name" : "Updates an operational entity.",
+  "request" : {
+    "urlPath" : "/entities/1934",
+    "method" : "PATCH"
+  },
+  "response" : {
+    "status" : 503,
+    "body" : "{\n  \"errors\" : [ {\n    \"code\" : \"serviceUnavailable\",\n    \"message\" : \"Service Unavailable\",\n    \"level\" : \"ERROR\",\n    \"description\" : \"Service Unavailable\"\n  } ]\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "05470ab4-52b4-4959-a097-d9a712d56795",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2024-10-23T17:30:47.213702986Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "updateEntities",
+        "schema" : {
+          "description" : "Data structure containing the details for errors.",
+          "type" : "object",
+          "minProperties" : 1,
+          "properties" : {
+            "errors" : {
+              "type" : "array",
+              "description" : "List of errors.",
+              "items" : {
+                "$ref" : "#/components/schemas/Error"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 12
+}

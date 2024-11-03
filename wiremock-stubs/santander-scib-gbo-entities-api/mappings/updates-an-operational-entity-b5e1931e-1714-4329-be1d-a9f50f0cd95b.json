@@ -1,0 +1,43 @@
+{
+  "id" : "b5e1931e-1714-4329-be1d-a9f50f0cd95b",
+  "name" : "Updates an operational entity.",
+  "request" : {
+    "urlPath" : "/entities/n466",
+    "method" : "PATCH"
+  },
+  "response" : {
+    "status" : 504,
+    "body" : "{\n  \"errors\" : [ {\n    \"code\" : \"gatewayTimeout\",\n    \"message\" : \"Gateway timeout\",\n    \"level\" : \"ERROR\",\n    \"description\" : \"Gateway timeout\"\n  } ]\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "b5e1931e-1714-4329-be1d-a9f50f0cd95b",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2024-10-23T17:30:47.215237662Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "updateEntities",
+        "schema" : {
+          "description" : "Data structure containing the details for errors.",
+          "type" : "object",
+          "minProperties" : 1,
+          "properties" : {
+            "errors" : {
+              "type" : "array",
+              "description" : "List of errors.",
+              "items" : {
+                "$ref" : "#/components/schemas/Error"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 11
+}

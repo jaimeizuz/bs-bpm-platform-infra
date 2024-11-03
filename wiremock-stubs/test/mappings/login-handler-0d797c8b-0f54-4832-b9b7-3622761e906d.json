@@ -1,0 +1,32 @@
+{
+  "id" : "0d797c8b-0f54-4832-b9b7-3622761e906d",
+  "name" : "Login handler",
+  "request" : {
+    "urlPath" : "/login",
+    "method" : "POST"
+  },
+  "response" : {
+    "status" : 302,
+    "body" : "",
+    "headers" : {
+      "Location" : "{{formData request.body 'form' urlDecode=true}}{{#assign 'code'}}{{{base64 (stringFormat 'auth..%s..%s..%s' form.email form.clientId form.nonce)}}}{{/assign}}{{{form.redirectUri}}}?code={{{urlEncode code}}}&state={{{form.state}}}"
+    },
+    "transformers" : [ "response-template", "rate-limit" ],
+    "transformerParameters" : {
+      "rateLimitName" : "authentication"
+    }
+  },
+  "uuid" : "0d797c8b-0f54-4832-b9b7-3622761e906d",
+  "persistent" : true,
+  "priority" : 5,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2020-03-03T13:43:48.924Z",
+        "via" : "STUB_IMPORT",
+        "by" : "7p1dp"
+      }
+    }
+  },
+  "insertionIndex" : 4
+}

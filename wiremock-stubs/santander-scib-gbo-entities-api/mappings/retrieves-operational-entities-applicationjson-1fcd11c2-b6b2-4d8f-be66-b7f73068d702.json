@@ -1,0 +1,93 @@
+{
+  "id" : "1fcd11c2-b6b2-4d8f-be66-b7f73068d702",
+  "name" : "Retrieves operational entities. (application/json)",
+  "request" : {
+    "urlPath" : "/entities",
+    "method" : "GET",
+    "headers" : {
+      "Accept" : {
+        "contains" : "application/json"
+      }
+    },
+    "queryParameters" : {
+      "glcs" : {
+        "matches" : ".*"
+      }
+    }
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\n  \"residenceCountry\" : {\n    \"code\" : \"cccca\",\n    \"name\" : \"V\"\n  },\n  \"glcs\" : \"02\",\n  \"localAliases\" : [ {\n    \"type\" : \"aa\",\n    \"value\" : \"aa\"\n  }, {\n    \"type\" : \"aa\",\n    \"value\" : \"aa\"\n  } ],\n  \"name\" : \"Mic\",\n  \"bookingUnit\" : \"aa\",\n  \"tradingAccountIdentifiers\" : [ {\n    \"id\" : \"t84m\",\n    \"type\" : \"LTID\",\n    \"creationDate\" : \"2024-04-24\"\n  }, {\n    \"id\" : \"hz04\",\n    \"type\" : \"FDID\",\n    \"creationDate\" : \"2024-11-09\"\n  }],\n  \"industry\" : {\n    \"code\" : \"SOVER\",\n    \"name\" : \"Miss Houston Fahey\"\n  },\n  \"id\" : 8.659996820626739E307,\n  \"type\" : {\n    \"code\" : \"IND\",\n    \"name\" : \"C Sr.\"\n  },\n  \"sourceApplication\" : {\n    \"code\" : \"aa\",\n    \"name\" : \"ly MD\"\n  },\n  \"status\" : \"ACTIVE\"\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "1fcd11c2-b6b2-4d8f-be66-b7f73068d702",
+  "persistent" : true,
+  "priority" : 5,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2024-10-23T17:30:47.157027341Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "retrieveEntities",
+        "schema" : {
+          "description" : "Data structure containing information about the Entity registration.",
+          "type" : "object",
+          "required" : [ "id", "glcs", "name", "type", "industry", "residenceCountry", "bookingUnit", "status", "sourceApplication" ],
+          "properties" : {
+            "id" : {
+              "$ref" : "#/components/schemas/EntityId"
+            },
+            "glcs" : {
+              "$ref" : "#/components/schemas/Glcs"
+            },
+            "name" : {
+              "type" : "string",
+              "description" : "Full name of the Entity.",
+              "example" : "Beijing Branch"
+            },
+            "type" : {
+              "$ref" : "#/components/schemas/EntityType"
+            },
+            "industry" : {
+              "$ref" : "#/components/schemas/Industry"
+            },
+            "residenceCountry" : {
+              "$ref" : "#/components/schemas/Country"
+            },
+            "bookingUnit" : {
+              "$ref" : "#/components/schemas/BookingUnit"
+            },
+            "status" : {
+              "$ref" : "#/components/schemas/EntityStatus"
+            },
+            "localAliases" : {
+              "type" : "array",
+              "description" : "List of local aliases for a given operational entity.",
+              "writeOnly" : true,
+              "items" : {
+                "$ref" : "#/components/schemas/LocalAlias"
+              }
+            },
+            "tradingAccountIdentifiers" : {
+              "type" : "array",
+              "description" : "List of Trading Account Identifiers.",
+              "readOnly" : true,
+              "items" : {
+                "$ref" : "#/components/schemas/TradingAccountIdentifier"
+              }
+            },
+            "sourceApplication" : {
+              "$ref" : "#/components/schemas/SourceApplication"
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 21,
+  "postServeActions" : [ ]
+}

@@ -1,0 +1,43 @@
+{
+  "id" : "a2a6da53-9d47-4b61-94e6-fc1d09257268",
+  "name" : "Updates an operational entity.",
+  "request" : {
+    "urlPath" : "/entities/y836",
+    "method" : "PATCH"
+  },
+  "response" : {
+    "status" : 404,
+    "body" : "{\n  \"errors\" : [ {\n    \"code\" : \"notFound\",\n    \"message\" : \"Not Found\",\n    \"level\" : \"ERROR\",\n    \"description\" : \"Not Found\"\n  } ]\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "a2a6da53-9d47-4b61-94e6-fc1d09257268",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2024-10-23T17:30:47.209966757Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "updateEntities",
+        "schema" : {
+          "description" : "Data structure containing the details for errors.",
+          "type" : "object",
+          "minProperties" : 1,
+          "properties" : {
+            "errors" : {
+              "type" : "array",
+              "description" : "List of errors.",
+              "items" : {
+                "$ref" : "#/components/schemas/Error"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 14
+}

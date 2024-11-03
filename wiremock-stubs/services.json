@@ -4,5 +4,15 @@
     "name" : "bs services",
     "port" : 9001,
     "rootDir" : "bs-services"
+  }, {
+    "id" : "x5461",
+    "name" : "santander-scib-gbo-entities-api",
+    "port" : 9002,
+    "rootDir" : "santander-scib-gbo-entities-api"
+  }, {
+    "id" : "o5jy2",
+    "name" : "test",
+    "port" : 9003,
+    "rootDir" : "test"
   } ]
 }

@@ -1,0 +1,37 @@
+{
+  "id" : "a45e2815-9ec8-41d2-b7f9-b351ef36cde3",
+  "name" : "User info",
+  "request" : {
+    "urlPath" : "/userinfo",
+    "method" : "GET",
+    "headers" : {
+      "Authorization" : {
+        "contains" : "Bearer "
+      }
+    }
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{{#trim}}\n{{#assign 'accessToken'}}{{{regexExtract request.headers.Authorization.0 '[^\\s]*$'}}}{{/assign}}\n{{regexExtract (base64 accessToken decode=true) '(.+?)\\.\\.(.+?)$' 'parts'}}\n{{#assign 'email'}}{{{parts.1}}}{{/assign}}\n{{#assign 'sub'}}{{{base64 email}}}{{/assign}}\n{\n    \"email\": \"{{{email}}}\",\n    \"sub\": \"{{{sub}}}\"\n}\n{{/trim}}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    },
+    "transformers" : [ "response-template", "rate-limit" ],
+    "transformerParameters" : {
+      "rateLimitName" : "authentication"
+    }
+  },
+  "uuid" : "a45e2815-9ec8-41d2-b7f9-b351ef36cde3",
+  "persistent" : true,
+  "priority" : 5,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2020-03-03T13:43:48.974Z",
+        "via" : "STUB_IMPORT",
+        "by" : "7p1dp"
+      }
+    }
+  },
+  "insertionIndex" : 6
+}

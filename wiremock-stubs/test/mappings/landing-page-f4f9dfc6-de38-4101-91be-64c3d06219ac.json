@@ -1,0 +1,32 @@
+{
+  "id" : "f4f9dfc6-de38-4101-91be-64c3d06219ac",
+  "name" : "Landing page",
+  "request" : {
+    "url" : "/",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "<!DOCTYPE html>\n<html>\n<head>\n    {{#if (eq request.requestLine.host 'oauth.mocklab.io')}}\n      <script async src=\"https://www.googletagmanager.com/gtag/js?id=UA-78148205-7\"></script>\n      <script>\n        window.dataLayer = window.dataLayer || [];\n        function gtag(){dataLayer.push(arguments);}\n        gtag('js', new Date());\n        gtag('config', 'UA-78148205-7');\n      </script>\n    {{/if}}\n  \n    <link href=\"https://fonts.googleapis.com/css?family=Cairo:300\" rel=\"stylesheet\"/>\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"/css/stylesheet.css\" />\n    <link rel=\"shortcut icon\" type=\"image/x-icon\" href=\"/favicon.png\">\n\n    <title>Mock OAuth2 / OpenID Connect Login</title>\n</head>\n\n<body>\n    <nav class=\"header-nav sticky\">\n        <ul class=\"header-nav__container\">\n          \n            <li class=\"header-nav__logo\">\n                <a href=\"/\">\n                    <img src=\"https://www.mocklab.io/images/mocklab_logo_with_text.png\" title=\"MockLab logo\">\n                </a>\n            </li>\n            \n            <li class=\"header-nav__item header-nav__item--last\">&nbsp;</li>\n\n            <li class=\"header-nav__cta\">\n                <a href=\"https://app.mocklab.io/login?for=signup\" title=\"Sign up\" target=\"_blank\">Sign up to MockLab</a>\n            </li>\n        </ul>\n\n    </nav>\n  \n  <div id=\"main\">\n    <div id=\"content\">\n      <h1 style=\"margin-top:0em;\">Mock OAuth2 / OpenID Connect Login</h1>\n      <p class=\"subtitle\">Powered by <a href=\"https://get.mocklab.io\" target=\"_new\">MockLab</a></p>\n      \n      <div style=\"display:flex;justify-content: center;margin-bottom:2em\">\n        <img src=\"https://www.mocklab.io/images/oauth-2-logo.png\" alt=\"OAuth2\" style=\"border:none;margin-right:10px;height:90px;width:92px\"/>\n        <img src=\"https://www.mocklab.io/images/openid-icon-100x100.png\" alt=\"OpenID Connect\" style=\"border:none;margin-left:10px;height:90px\"/>\n      </div>\n      \n      <p>\n        This is a simulation of an <strong>OAuth2</strong> / <strong>OpenID Connect</strong> login service for integration and performance testing.\n        <br/>\n        <a href=\"https://www.mocklab.io/docs/oauth2-mock/\" title=\"OAuth2 mock doc\">Learn more</a> or\n        try <a href=\"https://mocklab-demo.herokuapp.com/login\" title=\"Demo\" target=\"_blank\">the demo</a>.\n      </p>\n      \n      <h2>Configuration</h2>\n      \n      <p>\n        Authorization URI: <code>{{request.requestLine.baseUrl}}/oauth/authorize</code><br/>\n        Token URI: <code>{{request.requestLine.baseUrl}}/oauth/token</code><br/>\n        User info URI: <code>{{request.requestLine.baseUrl}}/userinfo</code><br/>\n        JWKS URI: <code>{{request.requestLine.baseUrl}}/.well-known/jwks.json</code><br/>\n      </p>\n    </div>\n  </div>\n</body>\n</html>",
+    "headers" : { },
+    "transformers" : [ "response-template" ]
+  },
+  "uuid" : "f4f9dfc6-de38-4101-91be-64c3d06219ac",
+  "persistent" : true,
+  "priority" : 5,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2020-03-03T13:43:49.087Z",
+        "via" : "STUB_IMPORT",
+        "by" : "7p1dp"
+      },
+      "updated" : {
+        "at" : "2020-03-03T17:40:53.57Z",
+        "via" : "ADMIN_API",
+        "by" : "7p1dp"
+      }
+    }
+  },
+  "insertionIndex" : 9
+}

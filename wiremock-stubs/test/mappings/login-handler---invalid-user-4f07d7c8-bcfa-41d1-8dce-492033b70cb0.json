@@ -1,0 +1,32 @@
+{
+  "id" : "4f07d7c8-bcfa-41d1-8dce-492033b70cb0",
+  "name" : "Login handler - invalid user",
+  "request" : {
+    "urlPath" : "/login",
+    "method" : "POST"
+  },
+  "response" : {
+    "status" : 302,
+    "body" : "",
+    "headers" : {
+      "Location" : "{{formData request.body 'form' urlDecode=true}}{{#assign 'code'}}{{base64 form.email}}{{/assign}}{{{form.redirectUri}}}?code={{code}}&state={{{form.state}}}"
+    },
+    "transformers" : [ "response-template", "rate-limit" ],
+    "transformerParameters" : {
+      "rateLimitName" : "authentication"
+    }
+  },
+  "uuid" : "4f07d7c8-bcfa-41d1-8dce-492033b70cb0",
+  "persistent" : true,
+  "priority" : 7,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2020-03-03T13:43:48.717Z",
+        "via" : "STUB_IMPORT",
+        "by" : "7p1dp"
+      }
+    }
+  },
+  "insertionIndex" : 0
+}

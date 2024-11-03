@@ -1,0 +1,29 @@
+{
+  "id" : "f5f4e020-81a0-4a56-8452-5330e6a8bb15",
+  "name" : "Test success",
+  "request" : {
+    "urlPath" : "/test-success",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "<!DOCTYPE html>\n<html>\n  <head>\n    <link rel=\"shortcut icon\" type=\"image/x-icon\" href=\"/favicon.png\"/>\n    <title>Simulated Auth0 Test Success Page - Powered by MockLab</title>\n  </head>\n<body>\n  <h1>Success!</h1>\n</body>\n</html>",
+    "headers" : {
+      "Content-Type" : "text/html"
+    },
+    "transformers" : [ "response-template" ]
+  },
+  "uuid" : "f5f4e020-81a0-4a56-8452-5330e6a8bb15",
+  "persistent" : true,
+  "priority" : 7,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2020-03-03T13:43:48.837Z",
+        "via" : "STUB_IMPORT",
+        "by" : "7p1dp"
+      }
+    }
+  },
+  "insertionIndex" : 2
+}

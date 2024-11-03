@@ -1,0 +1,30 @@
+{
+  "id" : "9241d7a5-d20f-47f0-9310-c7108b0342cb",
+  "name" : "Retrieves operational entities. - 204",
+  "request" : {
+    "urlPath" : "/entities",
+    "method" : "GET",
+    "queryParameters" : {
+      "glcs" : {
+        "equalTo" : "uyge"
+      }
+    }
+  },
+  "response" : {
+    "status" : 204
+  },
+  "uuid" : "9241d7a5-d20f-47f0-9310-c7108b0342cb",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2024-10-23T17:30:47.165351113Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "retrieveEntities"
+      }
+    }
+  },
+  "insertionIndex" : 34
+}

@@ -4,6 +4,19 @@ global:
   # scrape_timeout is set to the global default (10s).
 
 scrape_configs:
-  - job_name: aggregated-trace-metrics
+  #- job_name: 'otel-collector'
+  #  scrape_interval: 10s
+  #  static_configs:
+  #    - targets: ['otel-collector:8889']
+  #    - targets: ['otel-collector:8888']
+  #- job_name: prometheus
+  #  static_configs:
+  #    - targets: ["localhost:9090"]
+  #- job_name: node
+  #  static_configs:
+  #    - targets: ["node-exporter:9100"]
+  - job_name: 'scib-fund-onboarding-process-service'
+    metrics_path: '/q/metrics/prometheus'
+    scrape_interval: 2s
     static_configs:
-    - targets: ['otel_collector:8889']
+      - targets: ['scib-fund-onboarding-process-service:8080']

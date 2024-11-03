@@ -1,0 +1,53 @@
+{
+  "id" : "f0802be5-1829-4f52-ab2e-5097906fc804",
+  "name" : "Retrieves operational entities. (application/json)",
+  "request" : {
+    "urlPath" : "/entities",
+    "method" : "GET",
+    "headers" : {
+      "Accept" : {
+        "contains" : "application/json"
+      }
+    },
+    "queryParameters" : {
+      "glcs" : {
+        "equalTo" : "3fs3"
+      }
+    }
+  },
+  "response" : {
+    "status" : 400,
+    "body" : "{\n  \"errors\" : [ {\n    \"code\" : \"badRequest\",\n    \"message\" : \"Bad Request\",\n    \"level\" : \"ERROR\",\n    \"description\" : \"Bad Request\"\n  } ]\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "f0802be5-1829-4f52-ab2e-5097906fc804",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2024-10-23T17:30:47.167629954Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "retrieveEntities",
+        "schema" : {
+          "description" : "Data structure containing the details for errors.",
+          "type" : "object",
+          "minProperties" : 1,
+          "properties" : {
+            "errors" : {
+              "type" : "array",
+              "description" : "List of errors.",
+              "items" : {
+                "$ref" : "#/components/schemas/Error"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 33
+}

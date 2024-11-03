@@ -1,0 +1,43 @@
+{
+  "id" : "82ace026-a18d-412a-bf19-ac6fcf33835f",
+  "name" : "Creates an operational entity.",
+  "request" : {
+    "urlPath" : "/entities",
+    "method" : "POST"
+  },
+  "response" : {
+    "status" : 500,
+    "body" : "{\n  \"errors\" : [ {\n    \"code\" : \"internalServerError\",\n    \"message\" : \"Internal Server Error\",\n    \"level\" : \"ERROR\",\n    \"description\" : \"Internal Server Error\"\n  } ]\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "82ace026-a18d-412a-bf19-ac6fcf33835f",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2024-10-23T17:30:47.181652072Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "createEntities",
+        "schema" : {
+          "description" : "Data structure containing the details for errors.",
+          "type" : "object",
+          "minProperties" : 1,
+          "properties" : {
+            "errors" : {
+              "type" : "array",
+              "description" : "List of errors.",
+              "items" : {
+                "$ref" : "#/components/schemas/Error"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 21
+}

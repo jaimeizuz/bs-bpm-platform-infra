@@ -1,0 +1,43 @@
+{
+  "id" : "294bc54e-d73a-4135-a51e-98b900506cd7",
+  "name" : "Creates an operational entity.",
+  "request" : {
+    "urlPath" : "/entities",
+    "method" : "POST"
+  },
+  "response" : {
+    "status" : 403,
+    "body" : "{\n  \"errors\" : [ {\n    \"code\" : \"forbidden\",\n    \"message\" : \"Forbidden\",\n    \"level\" : \"ERROR\",\n    \"description\" : \"Forbidden\"\n  } ]\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "294bc54e-d73a-4135-a51e-98b900506cd7",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2024-10-23T17:30:47.180368668Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "createEntities",
+        "schema" : {
+          "description" : "Data structure containing the details for errors.",
+          "type" : "object",
+          "minProperties" : 1,
+          "properties" : {
+            "errors" : {
+              "type" : "array",
+              "description" : "List of errors.",
+              "items" : {
+                "$ref" : "#/components/schemas/Error"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 23
+}

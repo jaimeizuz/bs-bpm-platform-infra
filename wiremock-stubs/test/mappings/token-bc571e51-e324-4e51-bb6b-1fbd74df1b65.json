@@ -1,0 +1,36 @@
+{
+  "id" : "bc571e51-e324-4e51-bb6b-1fbd74df1b65",
+  "name" : "Token",
+  "request" : {
+    "urlPath" : "/oauth/token",
+    "method" : "POST",
+    "bodyPatterns" : [ {
+      "contains" : "code="
+    } ]
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{{#trim}}\n{{formData request.body 'form' urlDecode=true}}\n{{regexExtract (base64 form.code decode=true) '(.+?)\\.\\.(.+?)\\.\\.(.+?)\\.\\.(.*)$' 'parts'}}\n{{#assign 'emailAddress'}}{{{parts.1}}}{{/assign}}\n{{#assign 'clientId'}}{{{parts.2}}}{{/assign}}\n{{#assign 'nonce'}}{{{parts.3}}}{{/assign}}\n{{#assign 'subject'}}{{{base64 emailAddress}}}{{/assign}}\n{{#assign 'accessToken'}}{{{base64 (stringFormat 'access..%s' emailAddress)}}}{{/assign}}\n{{#assign 'idToken'}}{{#trim}}\n{{{jwt alg='RS256' email=emailAddress iss=request.requestLine.baseUrl aud=clientId sub=subject nonce=nonce}}}\n{{/trim}}{{/assign}}\n\n{\n  \"access_token\":\"{{{accessToken}}}\",\n  \"token_type\": \"Bearer\",\n  \"id_token\": \"{{{idToken}}}\"\n}\n{{/trim}}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    },
+    "transformers" : [ "response-template", "rate-limit" ],
+    "transformerParameters" : {
+      "rateLimitName" : "authentication"
+    }
+  },
+  "uuid" : "bc571e51-e324-4e51-bb6b-1fbd74df1b65",
+  "persistent" : true,
+  "priority" : 5,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2020-03-03T13:43:48.949Z",
+        "via" : "STUB_IMPORT",
+        "by" : "7p1dp"
+      }
+    }
+  },
+  "insertionIndex" : 5,
+  "postServeActions" : [ ]
+}

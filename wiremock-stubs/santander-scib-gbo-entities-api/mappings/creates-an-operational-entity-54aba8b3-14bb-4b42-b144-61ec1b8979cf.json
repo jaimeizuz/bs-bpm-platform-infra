@@ -1,0 +1,43 @@
+{
+  "id" : "54aba8b3-14bb-4b42-b144-61ec1b8979cf",
+  "name" : "Creates an operational entity.",
+  "request" : {
+    "urlPath" : "/entities",
+    "method" : "POST"
+  },
+  "response" : {
+    "status" : 504,
+    "body" : "{\n  \"errors\" : [ {\n    \"code\" : \"gatewayTimeout\",\n    \"message\" : \"Gateway timeout\",\n    \"level\" : \"ERROR\",\n    \"description\" : \"Gateway timeout\"\n  } ]\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "54aba8b3-14bb-4b42-b144-61ec1b8979cf",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2024-10-23T17:30:47.183163023Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "createEntities",
+        "schema" : {
+          "description" : "Data structure containing the details for errors.",
+          "type" : "object",
+          "minProperties" : 1,
+          "properties" : {
+            "errors" : {
+              "type" : "array",
+              "description" : "List of errors.",
+              "items" : {
+                "$ref" : "#/components/schemas/Error"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 19
+}

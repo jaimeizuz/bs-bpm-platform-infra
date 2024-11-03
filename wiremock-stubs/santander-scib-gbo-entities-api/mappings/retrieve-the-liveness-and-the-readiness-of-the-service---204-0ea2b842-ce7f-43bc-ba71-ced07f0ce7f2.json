@@ -1,0 +1,25 @@
+{
+  "id" : "0ea2b842-ce7f-43bc-ba71-ced07f0ce7f2",
+  "name" : "Retrieve the liveness and the readiness of the service. - 204",
+  "request" : {
+    "urlPath" : "/health",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 204
+  },
+  "uuid" : "0ea2b842-ce7f-43bc-ba71-ced07f0ce7f2",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2024-10-23T17:30:47.219395761Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "retrieveHealth"
+      }
+    }
+  },
+  "insertionIndex" : 9
+}

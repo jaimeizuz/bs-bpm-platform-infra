@@ -1,0 +1,43 @@
+{
+  "id" : "7c8a118c-0022-490f-a807-1d27fdf77c8a",
+  "name" : "Creates an operational entity.",
+  "request" : {
+    "urlPath" : "/entities",
+    "method" : "POST"
+  },
+  "response" : {
+    "status" : 401,
+    "body" : "{\n  \"errors\" : [ {\n    \"code\" : \"unauthorized\",\n    \"message\" : \"Unauthorized\",\n    \"level\" : \"ERROR\",\n    \"description\" : \"Unauthorized\"\n  } ]\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "7c8a118c-0022-490f-a807-1d27fdf77c8a",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2024-10-23T17:30:47.179650833Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "createEntities",
+        "schema" : {
+          "description" : "Data structure containing the details for errors.",
+          "type" : "object",
+          "minProperties" : 1,
+          "properties" : {
+            "errors" : {
+              "type" : "array",
+              "description" : "List of errors.",
+              "items" : {
+                "$ref" : "#/components/schemas/Error"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 24
+}

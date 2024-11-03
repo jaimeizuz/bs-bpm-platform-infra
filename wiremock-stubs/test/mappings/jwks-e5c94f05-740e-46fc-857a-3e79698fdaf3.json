@@ -1,0 +1,32 @@
+{
+  "id" : "e5c94f05-740e-46fc-857a-3e79698fdaf3",
+  "name" : "JWKS",
+  "request" : {
+    "url" : "/.well-known/jwks.json",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{{{jwks}}}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    },
+    "transformers" : [ "response-template", "rate-limit" ],
+    "transformerParameters" : {
+      "rateLimitName" : "authentication"
+    }
+  },
+  "uuid" : "e5c94f05-740e-46fc-857a-3e79698fdaf3",
+  "persistent" : true,
+  "priority" : 5,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2020-03-03T13:43:49.045Z",
+        "via" : "STUB_IMPORT",
+        "by" : "7p1dp"
+      }
+    }
+  },
+  "insertionIndex" : 8
+}

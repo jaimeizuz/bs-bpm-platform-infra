@@ -1,0 +1,30 @@
+{
+  "id" : "90971378-e2f3-4dee-ad4d-e9b783e85cfb",
+  "name" : "Login page",
+  "request" : {
+    "urlPath" : "/oauth/authorize",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "<!DOCTYPE html>\n<html>\n  <head>\n    <style type=\"text/css\">\n      body {\n        font-family: sans-serif;   \n      }\n      \n      #login-box {\n        max-width: 400px;\n        margin-left:auto;\n        margin-right: auto;\n        margin-top: 100px;\n        border: 1px solid black;\n        padding: 15px\n      }\n      \n      .text-input {\n        height: 1.5rem;\n        width: 20rem;\n      }\n      \n      .help-text {\n          max-width: 600px;\n          margin-left: auto;\n          margin-right: auto;\n          margin-top: 50px;\n          text-align: center;\n          color: darkgray;\n          line-height: 1.5em;\n          font-weight: lighter;\n          font-size: 1.5em;\n          padding: 15px;\n      }\n      \n      @media (max-width: 1000px) {\n        body {\n          font-size: 24px;\n        }\n        \n        label {\n          font-size: 38px;\n        }\n        \n        .text-input {\n            height: 1.5em;\n            width: 100%;\n            font-size: 2em;\n        }\n        \n        #login-box {\n          max-width: 100%;\n        }\n        \n        .help-text {\n          max-width: 100%;\n        }\n      }\n    </style>\n    <link rel=\"shortcut icon\" type=\"image/x-icon\" href=\"/favicon.png\">\n    <title>Simulated OAuth2 / OpenID Connect Login - Powered by MockLab</title>\n  </head>\n<body>\n  <div id=\"login-box\">\n    <div id=\"logos\" style=\"text-align: center;margin-top:15px;margin-bottom:15px\">\n      <a href=\"http://mocklab.io\" target=\"_new\">\n        <img src=\"https://www.mocklab.io/images/mocklab_logo_with_text.png\" alt=\"MockLab\" style=\"height:50px\"/>\n      </a>\n    </div>\n    <p>Simulated OAuth2 / OpenID Connect login service, powered by <a href=\"http://mocklab.io\" target=\"_new\">MockLab</a></p>\n    <br />\n    {{#eq request.query.error.0 'invalidUser'}}\n    <p style=\"color: red\">Error: not a recognised user</p>\n    {{/eq}}\n    <form method=\"POST\" action=\"/login\">\n      <input type=\"hidden\" name=\"state\" value=\"{{request.query.state}}\"/>\n      <input type=\"hidden\" name=\"redirectUri\" value=\"{{request.query.redirect_uri}}\"/>\n      <input type=\"hidden\" name=\"clientId\" value=\"{{request.query.client_id}}\"/>\n      <input type=\"hidden\" name=\"nonce\" value=\"{{request.query.nonce}}\"/>\n      \n      <label for=\"email\">Email:</label><br />\n      <input class=\"text-input\" type=\"email\" name=\"email\" placeholder=\"yours@example.com\"/><br /><br />\n      \n      <label for=\"password\">Password:</label><br />\n      <input class=\"text-input\" type=\"password\" name=\"password\" />\n      \n      <br /><br />\n      <input id=\"login-submit\" type=\"submit\" value=\"Login\" style=\"font-size: 200%\" />\n    </form>\n  </div>\n  \n  <div class=\"help-text\">\n    How to use: enter any email address and password. It doesn't matter if they don't exist.\n  </div>\n</body>\n</html>",
+    "headers" : { },
+    "transformers" : [ "response-template", "rate-limit" ],
+    "transformerParameters" : {
+      "rateLimitName" : "authentication"
+    }
+  },
+  "uuid" : "90971378-e2f3-4dee-ad4d-e9b783e85cfb",
+  "persistent" : true,
+  "priority" : 5,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2020-03-03T13:43:48.873Z",
+        "via" : "STUB_IMPORT",
+        "by" : "7p1dp"
+      }
+    }
+  },
+  "insertionIndex" : 3
+}

@@ -1,0 +1,43 @@
+{
+  "id" : "06d316e9-0bb2-41ea-994f-af8bf77cf05e",
+  "name" : "Creates an operational entity.",
+  "request" : {
+    "urlPath" : "/entities",
+    "method" : "POST"
+  },
+  "response" : {
+    "status" : 503,
+    "body" : "{\n  \"errors\" : [ {\n    \"code\" : \"serviceUnavailable\",\n    \"message\" : \"Service Unavailable\",\n    \"level\" : \"ERROR\",\n    \"description\" : \"Service Unavailable\"\n  } ]\n}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "06d316e9-0bb2-41ea-994f-af8bf77cf05e",
+  "persistent" : true,
+  "metadata" : {
+    "mocklab" : {
+      "created" : {
+        "at" : "2024-10-23T17:30:47.182220598Z",
+        "via" : "OAS3_IMPORT"
+      },
+      "oas" : {
+        "operationId" : "createEntities",
+        "schema" : {
+          "description" : "Data structure containing the details for errors.",
+          "type" : "object",
+          "minProperties" : 1,
+          "properties" : {
+            "errors" : {
+              "type" : "array",
+              "description" : "List of errors.",
+              "items" : {
+                "$ref" : "#/components/schemas/Error"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "insertionIndex" : 20
+}
