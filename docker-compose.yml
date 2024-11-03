@@ -1,7 +1,7 @@
 services:
   scib-secure-test-service:
     container_name: scib-secure-test-service
-    image: 'scib-secure-test-service:1.0.0'
+    image: 'jizuzquiza/scib-secure-test-service:1.0.0'
     profiles:
       - scib-secure-test-service
     ports:
